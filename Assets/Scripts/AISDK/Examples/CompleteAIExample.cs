@@ -1,8 +1,8 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using AISDK.Core;
-using AISDK.Core.Models;
+using UniBuddhi.Core;
+using UniBuddhi.Core.Models;
 
 public class CompleteAIExample : MonoBehaviour
 {

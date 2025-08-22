@@ -2,9 +2,9 @@ using System;
 using System.Collections;
 using System.Globalization;
 using UnityEngine;
-using AISDK.Core.Models;
+using UniBuddhi.Core.Models;
 
-namespace AISDK.Core.Extensions
+namespace UniBuddhi.Core.Extensions
 {
     /// <summary>
     /// Provides current time and date information

@@ -5,10 +5,10 @@ using System.Text;
 using UnityEngine;
 using UnityEngine.Networking;
 using Newtonsoft.Json;
-using AISDK.Core.Interfaces;
-using AISDK.Core.Models;
+using UniBuddhi.Core.Interfaces;
+using UniBuddhi.Core.Models;
 
-namespace AISDK.Core.TTS
+namespace UniBuddhi.Core.TTS
 {
     /// <summary>
     /// ElevenLabs TTS provider implementation

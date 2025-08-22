@@ -1,12 +1,12 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using AISDK.Core;
-using AISDK.Core.Models;
-using AISDK.Core.Extensions;
-using AISDK.Core.Interfaces;
+using UniBuddhi.Core;
+using UniBuddhi.Core.Models;
+using UniBuddhi.Core.Extensions;
+using UniBuddhi.Core.Interfaces;
 
-namespace AISDK.Examples
+namespace UniBuddhi.Examples
 {
     /// <summary>
     /// Example script demonstrating how to use the AI SDK

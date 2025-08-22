@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Newtonsoft.Json;
 
-namespace AISDK.Core.Models
+namespace UniBuddhi.Core.Models
 {
     #region Enums
     /// <summary>
@@ -378,6 +378,231 @@ namespace AISDK.Core.Models
     }
     #endregion
 
+    #region Function Calling Models
+    /// <summary>
+    /// Function definition for AI function calling
+    /// </summary>
+    [Serializable]
+    public class FunctionDefinition
+    {
+        [JsonProperty("name")]
+        public string Name { get; set; }
+        
+        [JsonProperty("description")]
+        public string Description { get; set; }
+        
+        [JsonProperty("parameters")]
+        public FunctionParameters Parameters { get; set; }
+        
+        public string ExtensionName { get; set; }
+        public int Priority { get; set; }
+
+        public FunctionDefinition(string name, string description, FunctionParameters parameters, string extensionName = "", int priority = 0)
+        {
+            Name = name;
+            Description = description;
+            Parameters = parameters;
+            ExtensionName = extensionName;
+            Priority = priority;
+        }
+    }
+
+    /// <summary>
+    /// Function parameters schema
+    /// </summary>
+    [Serializable]
+    public class FunctionParameters
+    {
+        [JsonProperty("type")]
+        public string Type { get; set; } = "object";
+        
+        [JsonProperty("properties")]
+        public Dictionary<string, FunctionProperty> Properties { get; set; }
+        
+        [JsonProperty("required")]
+        public List<string> Required { get; set; }
+
+        public FunctionParameters()
+        {
+            Properties = new Dictionary<string, FunctionProperty>();
+            Required = new List<string>();
+        }
+    }
+
+    /// <summary>
+    /// Function property definition
+    /// </summary>
+    [Serializable]
+    public class FunctionProperty
+    {
+        [JsonProperty("type")]
+        public string Type { get; set; }
+        
+        [JsonProperty("description")]
+        public string Description { get; set; }
+        
+        [JsonProperty("enum")]
+        public List<string> Enum { get; set; }
+        
+        [JsonProperty("default")]
+        public object Default { get; set; }
+
+        public FunctionProperty(string type, string description, List<string> enumValues = null, object defaultValue = null)
+        {
+            Type = type;
+            Description = description;
+            Enum = enumValues;
+            Default = defaultValue;
+        }
+    }
+
+    /// <summary>
+    /// Function call request
+    /// </summary>
+    [Serializable]
+    public class FunctionCall
+    {
+        [JsonProperty("name")]
+        public string Name { get; set; }
+        
+        [JsonProperty("arguments")]
+        public string Arguments { get; set; }
+        
+        public string ExtensionName { get; set; }
+        public Dictionary<string, object> ParsedArguments { get; set; }
+
+        public FunctionCall(string name, string arguments, string extensionName = "")
+        {
+            Name = name;
+            Arguments = arguments;
+            ExtensionName = extensionName;
+            ParsedArguments = new Dictionary<string, object>();
+        }
+    }
+
+    /// <summary>
+    /// Function call result
+    /// </summary>
+    [Serializable]
+    public class FunctionResult
+    {
+        public string FunctionName { get; set; }
+        public string ExtensionName { get; set; }
+        public bool Success { get; set; }
+        public string Result { get; set; }
+        public string Error { get; set; }
+        public Dictionary<string, object> Metadata { get; set; }
+        public DateTime Timestamp { get; set; }
+
+        public FunctionResult(string functionName, string extensionName, bool success, string result, string error = "")
+        {
+            FunctionName = functionName;
+            ExtensionName = extensionName;
+            Success = success;
+            Result = result;
+            Error = error;
+            Metadata = new Dictionary<string, object>();
+            Timestamp = DateTime.Now;
+        }
+    }
+    #endregion
+
+    #region Enhanced Agent Models
+    /// <summary>
+    /// Enhanced agent configuration with function calling support
+    /// </summary>
+    [Serializable]
+    public class EnhancedAgentConfig : AgentConfig
+    {
+        public List<string> ExtensionNames { get; set; }
+        public List<FunctionDefinition> AvailableFunctions { get; set; }
+        public bool EnableFunctionCalling { get; set; }
+        public AgentPersonality Personality { get; set; }
+        public Dictionary<string, object> FunctionSettings { get; set; }
+        public string[] AllowedActions { get; set; }
+
+        public EnhancedAgentConfig(AgentType type, AgentPersonality personality = null, string systemPrompt = "", float temperature = 0.7f, int maxTokens = 1000, ModelType model = ModelType.GPT_3_5_Turbo) 
+            : base(type, systemPrompt, temperature, maxTokens, model)
+        {
+            ExtensionNames = new List<string>();
+            AvailableFunctions = new List<FunctionDefinition>();
+            EnableFunctionCalling = true;
+            Personality = personality;
+            FunctionSettings = new Dictionary<string, object>();
+            AllowedActions = new string[0];
+        }
+    }
+
+    /// <summary>
+    /// Agent personality definition
+    /// </summary>
+    [Serializable]
+    public class AgentPersonality
+    {
+        public string Name { get; set; }
+        public string SystemPrompt { get; set; }
+        public string Description { get; set; }
+        public List<string> Traits { get; set; }
+        public List<string> Capabilities { get; set; }
+        public Dictionary<string, string> ResponsePatterns { get; set; }
+        public Dictionary<string, object> Settings { get; set; }
+        public float Temperature { get; set; }
+        public float Creativity { get; set; }
+        public float Formality { get; set; }
+
+        public AgentPersonality(string name, string systemPrompt = "", string description = "")
+        {
+            Name = name;
+            SystemPrompt = systemPrompt;
+            Description = description;
+            Temperature = 0.7f;
+            Creativity = 0.5f;
+            Formality = 0.5f;
+            Traits = new List<string>();
+            Capabilities = new List<string>();
+            ResponsePatterns = new Dictionary<string, string>();
+            Settings = new Dictionary<string, object>();
+        }
+
+        public AgentPersonality(string name, string description, string systemPrompt, float temperature)
+        {
+            Name = name;
+            Description = description;
+            SystemPrompt = systemPrompt;
+            Temperature = temperature;
+            Creativity = 0.5f;
+            Formality = 0.5f;
+            Traits = new List<string>();
+            Capabilities = new List<string>();
+            ResponsePatterns = new Dictionary<string, string>();
+            Settings = new Dictionary<string, object>();
+        }
+    }
+
+    /// <summary>
+    /// Enhanced chat request with function calling support
+    /// </summary>
+    [Serializable]
+    public class EnhancedChatRequest : ChatRequest
+    {
+        [JsonProperty("functions")]
+        public List<FunctionDefinition> Functions { get; set; }
+        
+        [JsonProperty("function_call")]
+        public object FunctionCall { get; set; }
+        
+        public bool SupportsFunctionCalling { get; set; }
+        public List<string> EnabledExtensions { get; set; }
+
+        public EnhancedChatRequest() : base()
+        {
+            Functions = new List<FunctionDefinition>();
+            SupportsFunctionCalling = true;
+            EnabledExtensions = new List<string>();
+        }
+    }
+    #endregion
+
     #region TTS Models
     /// <summary>
     /// TTS request structure
@@ -427,6 +652,176 @@ namespace AISDK.Core.Models
             SimilarityBoost = 0.5f;
             Style = 0.5f;
             UseSpeakerBoost = true;
+        }
+    }
+    #endregion
+
+    #region Agent Extension Models
+    /// <summary>
+    /// Agent extension binding - what extensions an agent can use
+    /// </summary>
+    [Serializable]
+    public class AgentExtensionBinding
+    {
+        public string AgentId { get; set; }
+        public string ExtensionName { get; set; }
+        public bool IsEnabled { get; set; }
+        public int Priority { get; set; }
+        public Dictionary<string, object> ExtensionSettings { get; set; }
+        public string[] AllowedActions { get; set; }
+
+        public AgentExtensionBinding(string agentId, string extensionName)
+        {
+            AgentId = agentId;
+            ExtensionName = extensionName;
+            IsEnabled = true;
+            Priority = 0;
+            ExtensionSettings = new Dictionary<string, object>();
+            AllowedActions = new string[0];
+        }
+    }
+
+    /// <summary>
+    /// Agent action definition - what actions an agent can perform
+    /// </summary>
+    [Serializable]
+    public class AgentAction
+    {
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string[] RequiredExtensions { get; set; }
+        public bool IsEnabled { get; set; }
+        public float Cooldown { get; set; }
+        public Dictionary<string, object> ActionParameters { get; set; }
+
+        public AgentAction(string name, string description = "")
+        {
+            Name = name;
+            Description = description;
+            RequiredExtensions = new string[0];
+            IsEnabled = true;
+            Cooldown = 0f;
+            ActionParameters = new Dictionary<string, object>();
+        }
+    }
+    #endregion
+
+    #region Event System Models
+    /// <summary>
+    /// AI SDK Event data
+    /// </summary>
+    [Serializable]
+    public class AISDKEvent
+    {
+        public string EventType { get; set; }
+        public string Source { get; set; }
+        public object Data { get; set; }
+        public DateTime Timestamp { get; set; }
+        public Dictionary<string, object> Metadata { get; set; }
+
+        public AISDKEvent(string eventType, string source, object data = null)
+        {
+            EventType = eventType;
+            Source = source;
+            Data = data;
+            Timestamp = DateTime.Now;
+            Metadata = new Dictionary<string, object>();
+        }
+    }
+
+    /// <summary>
+    /// Agent event data
+    /// </summary>
+    [Serializable]
+    public class AgentEvent : AISDKEvent
+    {
+        public string AgentId { get; set; }
+        public AgentType AgentType { get; set; }
+        public string Action { get; set; }
+        public string Result { get; set; }
+
+        public AgentEvent(string agentId, AgentType agentType, string action, string result = "") 
+            : base("AgentAction", agentId)
+        {
+            AgentId = agentId;
+            AgentType = agentType;
+            Action = action;
+            Result = result;
+        }
+    }
+
+    /// <summary>
+    /// Extension event data
+    /// </summary>
+    [Serializable]
+    public class ExtensionEvent : AISDKEvent
+    {
+        public string ExtensionName { get; set; }
+        public string Operation { get; set; }
+        public bool Success { get; set; }
+        public string ErrorMessage { get; set; }
+
+        public ExtensionEvent(string extensionName, string operation, bool success, string errorMessage = "") 
+            : base("ExtensionOperation", extensionName)
+        {
+            ExtensionName = extensionName;
+            Operation = operation;
+            Success = success;
+            ErrorMessage = errorMessage;
+        }
+    }
+    #endregion
+
+    #region Extension Management Models
+    /// <summary>
+    /// Extension capability definition
+    /// </summary>
+    [Serializable]
+    public class ExtensionCapability
+    {
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string[] SupportedActions { get; set; }
+        public bool IsActive { get; set; }
+        public float PerformanceScore { get; set; }
+        public Dictionary<string, object> CapabilitySettings { get; set; }
+
+        public ExtensionCapability(string name, string description = "")
+        {
+            Name = name;
+            Description = description;
+            SupportedActions = new string[0];
+            IsActive = true;
+            PerformanceScore = 1.0f;
+            CapabilitySettings = new Dictionary<string, object>();
+        }
+    }
+
+    /// <summary>
+    /// Extension registry entry
+    /// </summary>
+    [Serializable]
+    public class ExtensionRegistryEntry
+    {
+        public string Name { get; set; }
+        public string Version { get; set; }
+        public string Description { get; set; }
+        public string[] Tags { get; set; }
+        public bool IsEnabled { get; set; }
+        public int Priority { get; set; }
+        public ExtensionCapability[] Capabilities { get; set; }
+        public Dictionary<string, object> Metadata { get; set; }
+
+        public ExtensionRegistryEntry(string name, string version = "1.0.0")
+        {
+            Name = name;
+            Version = version;
+            Description = string.Empty;
+            Tags = new string[0];
+            IsEnabled = true;
+            Priority = 0;
+            Capabilities = new ExtensionCapability[0];
+            Metadata = new Dictionary<string, object>();
         }
     }
     #endregion

@@ -62,20 +62,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\AISDK\Core\Extensions\BaseExtension.cs" />
+    <Compile Include="Assets\Scripts\AISDK\Examples\EnhancedAgentExample.cs" />
     <Compile Include="Assets\Scripts\AISDK\Core\TTS\OpenAITTSProvider.cs" />
     <Compile Include="Assets\Scripts\AISDK\Core\Factories\AIProviderFactory.cs" />
     <Compile Include="Assets\Scripts\AISDK\Core\Agents\BaseAgent.cs" />
     <Compile Include="Assets\Scripts\AISDK\Core\Agents\AssistantAgent.cs" />
+    <Compile Include="Assets\Scripts\AISDK\Core\Interfaces\IFunctionExtension.cs" />
     <Compile Include="Assets\Scripts\AISDK\Examples\CompleteAIExample.cs" />
     <Compile Include="Assets\Scripts\AISDK\TestCompilation.cs" />
     <Compile Include="Assets\Scripts\AISDK\Core\Extensions\CurrentTimeExtension.cs" />
     <Compile Include="Assets\Scripts\AISDK\Core\TTS\AzureTTSProvider.cs" />
     <Compile Include="Assets\Scripts\AISDK\Core\Extensions\PersonalityAgentExtension.cs" />
+    <Compile Include="Assets\Scripts\AISDK\Core\FunctionCallManager.cs" />
+    <Compile Include="Assets\Scripts\AISDK\Core\Extensions\BaseFunctionExtension.cs" />
     <Compile Include="Assets\Scripts\AISDK\Core\Factories\TTSProviderFactory.cs" />
     <Compile Include="Assets\Scripts\AISDK\Core\TTS\GoogleTTSProvider.cs" />
     <Compile Include="Assets\Scripts\AISDK\Core\Providers\OpenAIProvider.cs" />
     <Compile Include="Assets\Scripts\AISDK\Core\AISDKCore.cs" />
     <Compile Include="Assets\Scripts\AISDK\Core\Interfaces\ITTSProvider.cs" />
+    <Compile Include="Assets\Scripts\AISDK\Examples\QuickStartFunctionExample.cs" />
     <Compile Include="Assets\Scripts\AISDK\Core\Interfaces\IAgentExtension.cs" />
     <Compile Include="Assets\Scripts\AISDK\Core\TTS\AmazonTTSProvider.cs" />
     <Compile Include="Assets\Scripts\AISDK\Examples\PersonalityExampleUsage.cs" />
@@ -87,13 +92,19 @@
     <Compile Include="Assets\Scripts\AISDK\Core\Factories\AgentFactory.cs" />
     <Compile Include="Assets\Scripts\AISDK\Core\Interfaces\IAIProvider.cs" />
     <Compile Include="Assets\Scripts\AISDK\Core\Providers\GeminiProvider.cs" />
+    <Compile Include="Assets\Scripts\AISDK\Examples\EnhancedAgentFunctionExample.cs" />
     <Compile Include="Assets\Scripts\AISDK\Core\Agents\ConversationalAgent.cs" />
     <Compile Include="Assets\Scripts\AISDK\Core\Models\AISDKModels.cs" />
     <Compile Include="Assets\Scripts\AISDK\Examples\AISDKExample.cs" />
+    <Compile Include="Assets\Scripts\AISDK\Core\Extensions\KnowledgeSearchExtension.cs" />
+    <Compile Include="Assets\Scripts\AISDK\Core\Agents\EnhancedAgent.cs" />
+    <Compile Include="Assets\Scripts\AISDK\Core\Extensions\CalculatorExtension.cs" />
     <Compile Include="Assets\Scripts\AISDK\Examples\PersonalityManagerUI.cs" />
     <Compile Include="Assets\Scripts\AISDK\Core\Providers\DeepSeekProvider.cs" />
+    <Compile Include="Assets\Scripts\AISDK\Core\Extensions\WeatherInfoExtension.cs" />
     <Compile Include="Assets\Scripts\AISDK\Core\TTS\ElevenLabsProvider.cs" />
     <Compile Include="Assets\Scripts\AISDK\Core\Agents\TechnicalAgent.cs" />
+    <Compile Include="Assets\Scripts\AISDK\Core\Extensions\WeatherExtension.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

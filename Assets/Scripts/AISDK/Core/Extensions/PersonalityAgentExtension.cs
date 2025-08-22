@@ -2,10 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using AISDK.Core.Extensions;
-using AISDK.Core.Models;
+using UniBuddhi.Core.Extensions;
+using UniBuddhi.Core.Models;
 
-namespace AISDK.Core.Extensions
+namespace UniBuddhi.Core.Extensions
 {
     /// <summary>
     /// Extension that adds custom personality-based agents with unique system prompts

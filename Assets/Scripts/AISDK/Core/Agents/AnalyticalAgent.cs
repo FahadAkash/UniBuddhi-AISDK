@@ -1,6 +1,6 @@
-using AISDK.Core.Models;
+using UniBuddhi.Core.Models;
 
-namespace AISDK.Core.Agents
+namespace UniBuddhi.Core.Agents
 {
     /// <summary>
     /// Analytical agent - Data analysis and problem-solving

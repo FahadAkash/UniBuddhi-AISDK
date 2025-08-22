@@ -1,10 +1,10 @@
 using System.Collections;
 using UnityEngine;
-using AISDK.Core;
-using AISDK.Core.Extensions;
-using AISDK.Core.Models;
+using UniBuddhi.Core;
+using UniBuddhi.Core.Extensions;
+using UniBuddhi.Core.Models;
 
-namespace AISDK.Examples
+namespace UniBuddhi.Examples
 {
     /// <summary>
     /// Example demonstrating how to use the Personality Agent Extension

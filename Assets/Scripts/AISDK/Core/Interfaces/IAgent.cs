@@ -1,9 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using AISDK.Core.Models;
+using UniBuddhi.Core.Models;
 
-namespace AISDK.Core.Interfaces
+namespace UniBuddhi.Core.Interfaces
 {
     /// <summary>
     /// Interface for AI agents

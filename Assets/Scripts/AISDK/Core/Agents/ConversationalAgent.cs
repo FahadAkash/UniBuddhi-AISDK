@@ -1,6 +1,6 @@
-using AISDK.Core.Models;
+using UniBuddhi.Core.Models;
 
-namespace AISDK.Core.Agents
+namespace UniBuddhi.Core.Agents
 {
     /// <summary>
     /// Conversational agent - Friendly, engaging conversations

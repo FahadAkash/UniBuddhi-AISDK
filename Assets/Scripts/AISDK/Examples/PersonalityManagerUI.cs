@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using AISDK.Core;
-using AISDK.Core.Extensions;
-using AISDK.Core.Models;
+using UniBuddhi.Core;
+using UniBuddhi.Core.Extensions;
+using UniBuddhi.Core.Models;
 
-namespace AISDK.Examples
+namespace UniBuddhi.Examples
 {
     /// <summary>
     /// UI Controller for managing personality agents

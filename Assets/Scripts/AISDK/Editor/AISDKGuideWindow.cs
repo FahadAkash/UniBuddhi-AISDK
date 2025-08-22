@@ -5,9 +5,9 @@ using UnityEditor;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using AISDK.Core;
+using UniBuddhi.Core;
 
-namespace AISDK.Editor
+namespace UniBuddhi.Editor
 {
 	public class AISDKGuideWindow : EditorWindow
 	{
@@ -36,7 +36,7 @@ namespace AISDK.Editor
 			window.Show();
 		}
 
-		[MenuItem("Tools/UniBuddhi AI SDK/Add AISDKCore to Scene", priority = 10)]
+		[MenuItem("Tools/UniBuddhi AI SDK/Add UniBuddhiCore to Scene", priority = 10)]
 		public static void AddCoreToSceneMenu()
 		{
 			EnsureCoreInScene();
@@ -284,12 +284,12 @@ namespace AISDK.Editor
 				EnsureCoreInScene();
 				core = GameObject.FindObjectOfType<AISDKCore>();
 			}
-			var existing = GameObject.FindObjectOfType<AISDK.Core.Extensions.PersonalityAgentExtension>();
+			var existing = GameObject.FindObjectOfType<UniBuddhi.Core.Extensions.PersonalityAgentExtension>();
 			if (existing == null && core != null)
 			{
 				var go = new GameObject("PersonalityAgentExtension");
 				go.transform.SetParent(core.transform);
-				go.AddComponent<AISDK.Core.Extensions.PersonalityAgentExtension>();
+				go.AddComponent<UniBuddhi.Core.Extensions.PersonalityAgentExtension>();
 				Undo.RegisterCreatedObjectUndo(go, "Add PersonalityAgentExtension");
 				EditorGUIUtility.PingObject(go);
 			}
@@ -307,12 +307,12 @@ namespace AISDK.Editor
 				EnsureCoreInScene();
 				core = GameObject.FindObjectOfType<AISDKCore>();
 			}
-			var existing = GameObject.FindObjectOfType<AISDK.Core.Extensions.CurrentTimeExtension>();
+			var existing = GameObject.FindObjectOfType<UniBuddhi.Core.Extensions.CurrentTimeExtension>();
 			if (existing == null && core != null)
 			{
 				var go = new GameObject("CurrentTimeExtension");
 				go.transform.SetParent(core.transform);
-				go.AddComponent<AISDK.Core.Extensions.CurrentTimeExtension>();
+				go.AddComponent<UniBuddhi.Core.Extensions.CurrentTimeExtension>();
 				Undo.RegisterCreatedObjectUndo(go, "Add CurrentTimeExtension");
 				EditorGUIUtility.PingObject(go);
 			}

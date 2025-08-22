@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using AISDK.Core.Interfaces;
-using AISDK.Core.Models;
-using AISDK.Core.Agents;
+using UniBuddhi.Core.Interfaces;
+using UniBuddhi.Core.Models;
+using UniBuddhi.Core.Agents;
 
-namespace AISDK.Core.Factories
+namespace UniBuddhi.Core.Factories
 {
     /// <summary>
     /// Factory for creating AI agents

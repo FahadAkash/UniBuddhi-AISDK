@@ -119,67 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &510525539
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 510525540}
-  - component: {fileID: 510525541}
-  m_Layer: 0
-  m_Name: PersonalityAgentExtension
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &510525540
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 510525539}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 781907792}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &510525541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 510525539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4801347bcf710dc428ec79d6378f05d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  customPersonalities:
-  - Type: 0
-    Name: 
-    SystemPrompt: 
-    PersonalityTraits: []
-    ResponseStyle: 
-    PreferredTopics: []
-    AvoidedTopics: []
-    CreativityLevel: 0
-    ResponseEnthusiasm: 0
-    UseEmotionalContext: 0
-    AdaptToUserMood: 0
-  currentPersonality: 0
-  overrideSystemPrompt: 1
-  addPersonalityContext: 1
-  usePersonalitySpecificResponses: 1
-  showPersonalityInResponse: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,7 +216,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1 &781907790
+--- !u!1 &850570411
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -285,22 +224,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 781907792}
-  - component: {fileID: 781907791}
+  - component: {fileID: 850570413}
+  - component: {fileID: 850570412}
   m_Layer: 0
-  m_Name: AISDKCore
+  m_Name: APiCore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &781907791
+--- !u!114 &850570412
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 781907790}
+  m_GameObject: {fileID: 850570411}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6182280f84ce81e469f86d42f97f5342, type: 3}
@@ -309,32 +248,37 @@ MonoBehaviour:
   selectedProvider: 1
   apiKey: 
   baseUrl: 
-  defaultAgentType: 0
+  defaultAgentType: 2
   defaultSystemPrompt: You are a helpful AI assistant.
   defaultTemperature: 0.7
   defaultMaxTokens: 1000
   enableExtensions: 1
-  extensionBehaviours: []
-  enableTTS: 1
+  extensionBehaviours:
+  - {fileID: 1731812872}
+  enableTTS: 0
   ttsProvider: 0
   ttsApiKey: 
   ttsVoiceId: 
+  enableFunctionCalling: 1
+  maxFunctionCallsPerMessage: 5
+  autoDiscoverFunctionExtensions: 1
+  functionExtensionBehaviours:
+  - {fileID: 1731812872}
   showDebugLogs: 1
   enablePerformanceMonitoring: 0
---- !u!4 &781907792
+--- !u!4 &850570413
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 781907790}
+  m_GameObject: {fileID: 850570411}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 510525540}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
@@ -429,10 +373,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1731812871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1731812873}
+  - component: {fileID: 1731812872}
+  m_Layer: 0
+  m_Name: quickStartExample
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1731812872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731812871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1364c392da891e348acc28980d91d51c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  apiKey: your-api-key-here
+  testMessage: What's 15 * 24 + the square root of 144?
+--- !u!4 &1731812873
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731812871}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 963194228}
   - {fileID: 705507995}
-  - {fileID: 781907792}
+  - {fileID: 1731812873}
+  - {fileID: 850570413}

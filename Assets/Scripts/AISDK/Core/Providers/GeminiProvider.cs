@@ -2,10 +2,10 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using AISDK.Core.Interfaces;
-using AISDK.Core.Models;
+using UniBuddhi.Core.Interfaces;
+using UniBuddhi.Core.Models;
 
-namespace AISDK.Core.Providers
+namespace UniBuddhi.Core.Providers
 {
     /// <summary>
     /// Gemini provider implementation
