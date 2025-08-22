@@ -2,6 +2,8 @@
 
 <div align="center">
 
+<img src="gitassets/logo.png" alt="UniBuddhi-AISDK Logo" width="300" height="auto">
+
 **A Comprehensive Unity AI Software Development Kit**
 
 *Integrate Multiple AI Providers, Create Intelligent Agents, and Add Voice Capabilities to Your Unity Projects*
