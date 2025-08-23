@@ -90,7 +90,8 @@ namespace UniBuddhi.Core.Agents
             // Add personality traits
             if (personality.Traits.Any())
             {
-                prompt += $"\n\nPersonality Traits: {string.Join(", ", personality.Traits)}";
+                var traitStrings = personality.Traits.Select(kvp => $"{kvp.Key} ({kvp.Value:F1})");
+                prompt += $"\n\nPersonality Traits: {string.Join(", ", traitStrings)}";
             }
             
             return prompt;

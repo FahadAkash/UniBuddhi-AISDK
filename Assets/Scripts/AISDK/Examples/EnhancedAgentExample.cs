@@ -108,7 +108,14 @@ namespace UniBuddhi.Examples
             );
             
             // Add farmer-specific traits
-            farmerPersonality.Traits = new List<string> { "Wise", "Experienced", "Nature-loving", "Practical", "Patient" };
+            farmerPersonality.Traits = new Dictionary<string, float> 
+            { 
+                { "Wise", 0.9f }, 
+                { "Experienced", 0.8f }, 
+                { "Nature-loving", 0.7f }, 
+                { "Practical", 0.8f }, 
+                { "Patient", 0.9f } 
+            };
             farmerPersonality.Creativity = 0.7f;
             farmerPersonality.Formality = 0.3f;
             
@@ -137,7 +144,14 @@ namespace UniBuddhi.Examples
             );
             
             // Add teacher-specific traits
-            teacherPersonality.Traits = new List<string> { "Knowledgeable", "Patient", "Encouraging", "Clear", "Supportive" };
+            teacherPersonality.Traits = new Dictionary<string, float> 
+            { 
+                { "Knowledgeable", 0.9f }, 
+                { "Patient", 0.9f }, 
+                { "Encouraging", 0.8f }, 
+                { "Clear", 0.8f }, 
+                { "Supportive", 0.7f } 
+            };
             teacherPersonality.Creativity = 0.5f;
             teacherPersonality.Formality = 0.6f;
             

@@ -15,7 +15,7 @@ F:/Game PRojects/Personal/UniBuddhi-AISDK
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64768
+61182
 -job-worker-count
 5
 -background-job-worker-count
@@ -59,12 +59,12 @@ F:/Game PRojects/Personal/UniBuddhi-AISDK
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [32860]  Target information:
+Player connection [27872]  Target information:
 
-Player connection [32860]  * "[IP] 192.168.0.107 [Port] 0 [Flags] 2 [Guid] 2933019223 [EditorId] 2933019223 [Version] 1048832 [Id] WindowsEditor(7,FahadAkash) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [27872]  * "[IP] 192.168.0.102 [Port] 0 [Flags] 2 [Guid] 2126036387 [EditorId] 2126036387 [Version] 1048832 [Id] WindowsEditor(7,FahadAkash) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [32860] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [32860] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [27872] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [27872] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 5
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -76,7 +76,7 @@ Library Redirect Path: Library/
 [Physics::Module] SDK Version: 4.1.2
 [Physics::Module] Integration Version: 1.0.0
 [Physics::Module] Threading Mode: Multi-Threaded
-Refreshing native plugins compatible for Editor in 151.34 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 2.94 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 6000.0.37f1 (090b7797214c)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/Resources/UnitySubsystems
@@ -92,48 +92,48 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56608
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56352
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 0.004498 seconds.
-- Loaded All Assemblies, in 11.447 seconds
+Registered in 0.006131 seconds.
+- Loaded All Assemblies, in  0.539 seconds
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 270 ms
+Android Extension - Scanning For ADB Devices 583 ms
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.633 seconds
-Domain Reload Profiling: 12078ms
-	BeginReloadAssembly (9312ms)
+- Finished resetting the current domain, in  1.323 seconds
+Domain Reload Profiling: 1860ms
+	BeginReloadAssembly (194ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (585ms)
-	RebuildNativeTypeToScriptingClass (13ms)
-	initialDomainReloadingComplete (51ms)
-	LoadAllAssembliesAndSetupDomain (1485ms)
-		LoadAssemblies (9309ms)
+	RebuildCommonClasses (51ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (73ms)
+	LoadAllAssembliesAndSetupDomain (204ms)
+		LoadAssemblies (190ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1482ms)
-			TypeCache.Refresh (1480ms)
-				TypeCache.ScanAssembly (1146ms)
+		AnalyzeDomain (198ms)
+			TypeCache.Refresh (196ms)
+				TypeCache.ScanAssembly (174ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (633ms)
+	FinalizeReload (1324ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (596ms)
+		SetupLoadedEditorAssemblies (1265ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (359ms)
-			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (52ms)
-			ProcessInitializeOnLoadAttributes (114ms)
-			ProcessInitializeOnLoadMethodAttributes (68ms)
+			InitializePlatformSupportModulesInManaged (705ms)
+			SetLoadedEditorAssemblies (5ms)
+			BeforeProcessingInitializeOnLoad (97ms)
+			ProcessInitializeOnLoadAttributes (268ms)
+			ProcessInitializeOnLoadMethodAttributes (189ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -143,315 +143,223 @@ Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  6.841 seconds
-Refreshing native plugins compatible for Editor in 0.64 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.876 seconds
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.699 seconds
-Domain Reload Profiling: 7538ms
-	BeginReloadAssembly (164ms)
+- Finished resetting the current domain, in  0.888 seconds
+Domain Reload Profiling: 1761ms
+	BeginReloadAssembly (256ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
+		DisableScriptedObjects (10ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (30ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (34ms)
-	LoadAllAssembliesAndSetupDomain (6596ms)
-		LoadAssemblies (5923ms)
+		CreateAndSetChildDomain (51ms)
+	RebuildCommonClasses (63ms)
+	RebuildNativeTypeToScriptingClass (15ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (496ms)
+		LoadAssemblies (410ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (772ms)
-			TypeCache.Refresh (735ms)
-				TypeCache.ScanAssembly (718ms)
-			BuildScriptInfoCaches (30ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (699ms)
+		AnalyzeDomain (238ms)
+			TypeCache.Refresh (191ms)
+				TypeCache.ScanAssembly (169ms)
+			BuildScriptInfoCaches (36ms)
+			ResolveRequiredComponents (6ms)
+	FinalizeReload (888ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (590ms)
+		SetupLoadedEditorAssemblies (713ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
-			SetLoadedEditorAssemblies (4ms)
-			BeforeProcessingInitializeOnLoad (76ms)
-			ProcessInitializeOnLoadAttributes (467ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (6ms)
+			BeforeProcessingInitializeOnLoad (94ms)
+			ProcessInitializeOnLoadAttributes (567ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
 			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (4ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.01 seconds
-Refreshing native plugins compatible for Editor in 1.38 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 8 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3839 unused Assets / (1.3 MB). Loaded Objects now: 4323.
-Memory consumption went from 83.7 MB to 82.4 MB.
-Total: 7.124900 ms (FindLiveObjects: 0.448100 ms CreateObjectMapping: 0.310300 ms MarkObjects: 4.946200 ms  DeleteObjects: 1.418800 ms)
+Unloading 3850 unused Assets / (1.3 MB). Loaded Objects now: 4334.
+Memory consumption went from 83.6 MB to 82.4 MB.
+Total: 7.291200 ms (FindLiveObjects: 0.469600 ms CreateObjectMapping: 0.618200 ms MarkObjects: 4.699400 ms  DeleteObjects: 1.502400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 832.893747 seconds.
-  path: Assets/Scripts/AISDK/Core/Providers
-  artifactKey: Guid(bc933e8d790d8d2408f6e9fb78d5e1a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AISDK/Core/Providers using Guid(bc933e8d790d8d2408f6e9fb78d5e1a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2b0908b9a397e0e964858f28883ea6ff') in 0.0051934 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Scripts/AISDK/Core/Providers/AnthropicProvider.cs
-  artifactKey: Guid(ec49ae2be9261d94698bc9f7e95a994a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AISDK/Core/Providers/AnthropicProvider.cs using Guid(ec49ae2be9261d94698bc9f7e95a994a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1a5fd9e64bd4e94a38af9b4443dec819') in 0.0005058 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/Scripts/AISDK/Core/Providers/GeminiProvider.cs
-  artifactKey: Guid(d329804b75d8f8d48a2d319f71e83158) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AISDK/Core/Providers/GeminiProvider.cs using Guid(d329804b75d8f8d48a2d319f71e83158) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ec83705a50ba0e5b13000d5777ae524e') in 0.0004823 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 56.348851 seconds.
-  path: Assets/Scripts/AISDK/Core/Agents/AnalyticalAgent.cs
-  artifactKey: Guid(9c0b9386e02ae184385c38f29ee1f95a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AISDK/Core/Agents/AnalyticalAgent.cs using Guid(9c0b9386e02ae184385c38f29ee1f95a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9dee62c0ca9c1ec1890d6dd46f3f0853') in 0.0005708 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.771582 seconds.
-  path: Assets/Scripts/AISDK/Core/Agents/AssistantAgent.cs
-  artifactKey: Guid(4ec154d4d99283340a2fa90208f097af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AISDK/Core/Agents/AssistantAgent.cs using Guid(4ec154d4d99283340a2fa90208f097af) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '637645a17e746a9bba6ff74cb2de7da1') in 0.0004948 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.653671 seconds.
-  path: Assets/Scripts/AISDK/Core/Agents/ConversationalAgent.cs
-  artifactKey: Guid(8e64d77c8afb1674990d2f49f2474a45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AISDK/Core/Agents/ConversationalAgent.cs using Guid(8e64d77c8afb1674990d2f49f2474a45) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '411af93b4479c68075e923183d4562e6') in 0.0004601 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.519484 seconds.
-  path: Assets/Scripts/AISDK/Core/Factories/AgentFactory.cs
-  artifactKey: Guid(39f6f716ed908694d9ea37fbab7602bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/AISDK/Core/Factories/AgentFactory.cs using Guid(39f6f716ed908694d9ea37fbab7602bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2810a8269b622f7c8c37f5fcaf1fc87f') in 0.0005079 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 1.44 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3832 unused Assets / (1.0 MB). Loaded Objects now: 4327.
-Memory consumption went from 81.8 MB to 80.7 MB.
-Total: 8.701600 ms (FindLiveObjects: 0.483000 ms CreateObjectMapping: 0.344500 ms MarkObjects: 6.820900 ms  DeleteObjects: 1.051400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 705.682785 seconds.
-  path: Assets/InputSystem_Actions.inputactions
-  artifactKey: Guid(289c1b55c9541489481df5cc06664110) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/InputSystem_Actions.inputactions using Guid(289c1b55c9541489481df5cc06664110) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '4f3b61a0c6c7fa7071ef9709d5f82858') in 0.350653 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 22
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Scripts/AISDK/Core/Factories/TTSProviderFactory.cs
-  artifactKey: Guid(86c1346c4d072cd4990bc719ce245819) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Scripts/AISDK/Core/Factories/TTSProviderFactory.cs using Guid(86c1346c4d072cd4990bc719ce245819) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'ff88f297f266d0a6ec30097da8f950c4') in 0.0260707 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000059 seconds.
-  path: Assets/Scripts/AISDK/Core/Extensions/BaseExtension.cs
-  artifactKey: Guid(4465b13c59b98a34e92ee13dee26c24f) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Scripts/AISDK/Core/Extensions/BaseExtension.cs using Guid(4465b13c59b98a34e92ee13dee26c24f) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e84969e7cb733bb906e4e902daf0876c') in 0.0122148 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000077 seconds.
-  path: Assets/Scripts/AISDK/Core/Factories/AIProviderFactory.cs
-  artifactKey: Guid(2712528301801174692899e38a9ee36e) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Scripts/AISDK/Core/Factories/AIProviderFactory.cs using Guid(2712528301801174692899e38a9ee36e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'a8c24ff464e10b564d7dd61bd0539cfb') in 0.0109236 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000080 seconds.
-  path: Assets/Scripts/AISDK/Core/Providers/GeminiProvider.cs
-  artifactKey: Guid(d329804b75d8f8d48a2d319f71e83158) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Scripts/AISDK/Core/Providers/GeminiProvider.cs using Guid(d329804b75d8f8d48a2d319f71e83158) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '161671289367dc1639ce890f98bf1fc0') in 0.0132903 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000070 seconds.
-  path: Assets/Scripts/AISDK/Core/AISDKCore.cs
-  artifactKey: Guid(6182280f84ce81e469f86d42f97f5342) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Scripts/AISDK/Core/AISDKCore.cs using Guid(6182280f84ce81e469f86d42f97f5342) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '55d909c8a477e1ac7427caab1f7ba60a') in 0.0158027 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000083 seconds.
-  path: Assets/Scripts/AISDK/Core/Interfaces/IAgentExtension.cs
-  artifactKey: Guid(e8ec1c0285169d044a57b63aef98efaf) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Scripts/AISDK/Core/Interfaces/IAgentExtension.cs using Guid(e8ec1c0285169d044a57b63aef98efaf) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'c4d2e9f6e93d7c9b8272fea24ffb1973') in 0.0114079 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/Scripts/AISDK/Core/Factories/AgentFactory.cs
-  artifactKey: Guid(39f6f716ed908694d9ea37fbab7602bf) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Scripts/AISDK/Core/Factories/AgentFactory.cs using Guid(39f6f716ed908694d9ea37fbab7602bf) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '78c340f28c0b08a242a6921b43c5f347') in 0.0123095 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000060 seconds.
-  path: Assets/Scripts/AISDK/Core/Interfaces/IAIProvider.cs
-  artifactKey: Guid(993db061de48bba469a3eeae4113949e) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Scripts/AISDK/Core/Interfaces/IAIProvider.cs using Guid(993db061de48bba469a3eeae4113949e) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '9b76645046d7867b7f534d3833113420') in 0.014438 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
+  Time since last request: 2059.021957 seconds.
   path: Assets/Scripts/AISDK/Core/Agents/BaseAgent.cs
-  artifactKey: Guid(53d40c01b875bd54b9b044e1645d1012) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Scripts/AISDK/Core/Agents/BaseAgent.cs using Guid(53d40c01b875bd54b9b044e1645d1012) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '758ffc3820f505076a8f64154d721314') in 0.0156952 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000090 seconds.
-  path: Assets/Scripts/AISDK/README.md
-  artifactKey: Guid(a237fe93786d7ae49a3fe3cb1642204b) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Scripts/AISDK/README.md using Guid(a237fe93786d7ae49a3fe3cb1642204b) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'b17e909d26e4a97fcfffe648551dcd6d') in 0.0125635 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Scripts/AISDK/Examples/PersonalityExampleUsage.cs
-  artifactKey: Guid(0fc0e2d717980fc4fbd1cc5926e44b00) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Scripts/AISDK/Examples/PersonalityExampleUsage.cs using Guid(0fc0e2d717980fc4fbd1cc5926e44b00) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'e7a2583a8901dd5dd16deb2d46c75e27') in 0.0125862 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000111 seconds.
-  path: Assets/Scripts/AISDK/Core/Extensions/WeatherExtension.cs
-  artifactKey: Guid(4337d8f5837bcfb4dbe10b938e75ebe1) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Scripts/AISDK/Core/Extensions/WeatherExtension.cs using Guid(4337d8f5837bcfb4dbe10b938e75ebe1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '2b63ded2fc88c15eeae3abefbe123c1a') in 0.0122319 seconds
+  artifactKey: Guid(53d40c01b875bd54b9b044e1645d1012) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AISDK/Core/Agents/BaseAgent.cs using Guid(53d40c01b875bd54b9b044e1645d1012) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1c8ffb4360bd93cb6a8f524dbec9ca03') in 0.0066257 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Prepare
-Refreshing native plugins compatible for Editor in 1.40 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.31 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3832 unused Assets / (1.1 MB). Loaded Objects now: 4327.
-Memory consumption went from 82.0 MB to 80.9 MB.
-Total: 11.206500 ms (FindLiveObjects: 0.358600 ms CreateObjectMapping: 0.379700 ms MarkObjects: 9.411200 ms  DeleteObjects: 1.055400 ms)
+Unloading 3841 unused Assets / (1.0 MB). Loaded Objects now: 4336.
+Memory consumption went from 81.7 MB to 80.7 MB.
+Total: 7.717800 ms (FindLiveObjects: 0.460000 ms CreateObjectMapping: 0.574200 ms MarkObjects: 5.478900 ms  DeleteObjects: 1.203000 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 269.546342 seconds.
-  path: Assets/Scripts/AISDK/Examples/EnhancedAgentExample.cs
-  artifactKey: Guid(1d3c29213ffa3db49b4c798bf269c3c3) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Scripts/AISDK/Examples/EnhancedAgentExample.cs using Guid(1d3c29213ffa3db49b4c798bf269c3c3) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: 'cdf2765bc965a21c44eee2777693ddef') in 0.0147161 seconds
+  Time since last request: 69.181163 seconds.
+  path: Assets/Scripts/AISDK/Core/Extensions/CalculatorExtension.cs
+  artifactKey: Guid(a9b248899f38fd04093ac7f9171fe6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AISDK/Core/Extensions/CalculatorExtension.cs using Guid(a9b248899f38fd04093ac7f9171fe6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f57dcffde3c3005fa288f7422e6e0f11') in 0.0010855 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000109 seconds.
-  path: Assets/Scripts/AISDK/Core/Extensions/WeatherExtension.cs
-  artifactKey: Guid(4337d8f5837bcfb4dbe10b938e75ebe1) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Scripts/AISDK/Core/Extensions/WeatherExtension.cs using Guid(4337d8f5837bcfb4dbe10b938e75ebe1) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '7831da8ffb223f1c7760ae09a659abd7') in 0.0161181 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.93 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3841 unused Assets / (1.2 MB). Loaded Objects now: 4336.
+Memory consumption went from 81.7 MB to 80.5 MB.
+Total: 7.321100 ms (FindLiveObjects: 0.312900 ms CreateObjectMapping: 0.221400 ms MarkObjects: 5.426500 ms  DeleteObjects: 1.358500 ms)
 
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Prepare
 Refreshing native plugins compatible for Editor in 2.11 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3832 unused Assets / (1.1 MB). Loaded Objects now: 4327.
-Memory consumption went from 82.0 MB to 80.9 MB.
-Total: 12.223300 ms (FindLiveObjects: 0.679900 ms CreateObjectMapping: 0.769300 ms MarkObjects: 9.247300 ms  DeleteObjects: 1.524800 ms)
+Unloading 3841 unused Assets / (1.1 MB). Loaded Objects now: 4336.
+Memory consumption went from 81.7 MB to 80.5 MB.
+Total: 16.402200 ms (FindLiveObjects: 0.584800 ms CreateObjectMapping: 0.584400 ms MarkObjects: 13.592700 ms  DeleteObjects: 1.638300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3841 unused Assets / (1.1 MB). Loaded Objects now: 4336.
+Memory consumption went from 81.7 MB to 80.6 MB.
+Total: 5.787300 ms (FindLiveObjects: 0.310800 ms CreateObjectMapping: 0.225700 ms MarkObjects: 3.800300 ms  DeleteObjects: 1.449100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.04 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3841 unused Assets / (1.1 MB). Loaded Objects now: 4336.
+Memory consumption went from 81.7 MB to 80.5 MB.
+Total: 9.074800 ms (FindLiveObjects: 0.505400 ms CreateObjectMapping: 0.697300 ms MarkObjects: 6.594400 ms  DeleteObjects: 1.276000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.32 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3841 unused Assets / (1.4 MB). Loaded Objects now: 4336.
+Memory consumption went from 81.7 MB to 80.3 MB.
+Total: 9.313500 ms (FindLiveObjects: 0.380200 ms CreateObjectMapping: 0.329600 ms MarkObjects: 6.828100 ms  DeleteObjects: 1.773300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3841 unused Assets / (1.2 MB). Loaded Objects now: 4336.
+Memory consumption went from 81.7 MB to 80.4 MB.
+Total: 9.153600 ms (FindLiveObjects: 0.391100 ms CreateObjectMapping: 0.368200 ms MarkObjects: 7.034300 ms  DeleteObjects: 1.358400 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 178.557836 seconds.
-  path: Assets/Scripts/AISDK/Core/AISDKCore.cs
-  artifactKey: Guid(6182280f84ce81e469f86d42f97f5342) Importer(2089858483,192608db42251d675da83286b1cce702)
-Start importing Assets/Scripts/AISDK/Core/AISDKCore.cs using Guid(6182280f84ce81e469f86d42f97f5342) Importer(2089858483,192608db42251d675da83286b1cce702) (ScriptedImporter) -> (artifact id: '821e0aed83cb59a0f4d546bab7f9c46d') in 0.0154537 seconds
+  Time since last request: 1333.922374 seconds.
+  path: Assets/Scripts/AISDK/Core/Extensions/CalculatorExtension.cs
+  artifactKey: Guid(a9b248899f38fd04093ac7f9171fe6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AISDK/Core/Extensions/CalculatorExtension.cs using Guid(a9b248899f38fd04093ac7f9171fe6dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd2f50b2f303b4cb558cc4c47593e7bd0') in 0.003606 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Prepare
+Refreshing native plugins compatible for Editor in 1.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3841 unused Assets / (1.2 MB). Loaded Objects now: 4336.
+Memory consumption went from 81.7 MB to 80.5 MB.
+Total: 7.778000 ms (FindLiveObjects: 0.359400 ms CreateObjectMapping: 0.262300 ms MarkObjects: 5.958400 ms  DeleteObjects: 1.196000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 1.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3841 unused Assets / (0.9 MB). Loaded Objects now: 4336.
+Memory consumption went from 81.7 MB to 80.7 MB.
+Total: 7.819500 ms (FindLiveObjects: 0.333800 ms CreateObjectMapping: 0.318000 ms MarkObjects: 6.213100 ms  DeleteObjects: 0.952000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory is not a mono symbol file
-- Loaded All Assemblies, in  0.627 seconds
-Refreshing native plugins compatible for Editor in 1.23 ms, found 3 plugins.
+- Loaded All Assemblies, in  0.615 seconds
+Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.664 seconds
-Domain Reload Profiling: 1293ms
-	BeginReloadAssembly (192ms)
+- Finished resetting the current domain, in  0.680 seconds
+Domain Reload Profiling: 1297ms
+	BeginReloadAssembly (200ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (58ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (365ms)
-		LoadAssemblies (302ms)
+		CreateAndSetChildDomain (57ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (346ms)
+		LoadAssemblies (295ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (151ms)
-			TypeCache.Refresh (11ms)
+		AnalyzeDomain (145ms)
+			TypeCache.Refresh (10ms)
 				TypeCache.ScanAssembly (2ms)
-			BuildScriptInfoCaches (129ms)
+			BuildScriptInfoCaches (124ms)
 			ResolveRequiredComponents (6ms)
-	FinalizeReload (665ms)
+	FinalizeReload (680ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (550ms)
+		SetupLoadedEditorAssemblies (566ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (13ms)
+			InitializePlatformSupportModulesInManaged (11ms)
 			SetLoadedEditorAssemblies (3ms)
-			BeforeProcessingInitializeOnLoad (73ms)
-			ProcessInitializeOnLoadAttributes (429ms)
-			ProcessInitializeOnLoadMethodAttributes (27ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			BeforeProcessingInitializeOnLoad (80ms)
+			ProcessInitializeOnLoadAttributes (446ms)
+			ProcessInitializeOnLoadMethodAttributes (23ms)
+			AfterProcessingInitializeOnLoad (3ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 1.32 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.47 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3839 unused Assets / (1.1 MB). Loaded Objects now: 4328.
-Memory consumption went from 83.4 MB to 82.4 MB.
-Total: 6.866800 ms (FindLiveObjects: 0.373600 ms CreateObjectMapping: 0.275700 ms MarkObjects: 5.267700 ms  DeleteObjects: 0.948200 ms)
+Unloading 3848 unused Assets / (0.8 MB). Loaded Objects now: 4337.
+Memory consumption went from 83.4 MB to 82.6 MB.
+Total: 6.456100 ms (FindLiveObjects: 0.398800 ms CreateObjectMapping: 0.261700 ms MarkObjects: 4.903000 ms  DeleteObjects: 0.891000 ms)
 
 Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 771.688976 seconds.
+  path: Assets/Scripts/AISDK/Core/AISDKCore.cs
+  artifactKey: Guid(6182280f84ce81e469f86d42f97f5342) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/AISDK/Core/AISDKCore.cs using Guid(6182280f84ce81e469f86d42f97f5342) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '51e01e53f15b7ba0201105edf5dd3e1a') in 0.0037826 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+

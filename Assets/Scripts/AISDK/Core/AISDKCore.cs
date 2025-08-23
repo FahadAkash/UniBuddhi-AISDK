@@ -956,11 +956,11 @@ namespace UniBuddhi.Core
         /// <summary>
         /// Create a personality for agents
         /// </summary>
-        public AgentPersonality CreatePersonality(string name, string systemPrompt, List<string> traits = null, List<string> capabilities = null)
+        public AgentPersonality CreatePersonality(string name, string systemPrompt, Dictionary<string, float> traits = null, List<string> capabilities = null)
         {
             var personality = new AgentPersonality(name, systemPrompt)
             {
-                Traits = traits ?? new List<string>(),
+                Traits = traits ?? new Dictionary<string, float>(),
                 Capabilities = capabilities ?? new List<string>()
             };
             

@@ -542,11 +542,12 @@ namespace UniBuddhi.Core.Models
         public string Name { get; set; }
         public string SystemPrompt { get; set; }
         public string Description { get; set; }
-        public List<string> Traits { get; set; }
+        public Dictionary<string, float> Traits { get; set; }
         public List<string> Capabilities { get; set; }
         public Dictionary<string, string> ResponsePatterns { get; set; }
         public Dictionary<string, object> Settings { get; set; }
         public float Temperature { get; set; }
+        public int MaxTokens { get; set; }
         public float Creativity { get; set; }
         public float Formality { get; set; }
 
@@ -556,9 +557,10 @@ namespace UniBuddhi.Core.Models
             SystemPrompt = systemPrompt;
             Description = description;
             Temperature = 0.7f;
+            MaxTokens = 1000;
             Creativity = 0.5f;
             Formality = 0.5f;
-            Traits = new List<string>();
+            Traits = new Dictionary<string, float>();
             Capabilities = new List<string>();
             ResponsePatterns = new Dictionary<string, string>();
             Settings = new Dictionary<string, object>();
@@ -570,9 +572,10 @@ namespace UniBuddhi.Core.Models
             Description = description;
             SystemPrompt = systemPrompt;
             Temperature = temperature;
+            MaxTokens = 1000;
             Creativity = 0.5f;
             Formality = 0.5f;
-            Traits = new List<string>();
+            Traits = new Dictionary<string, float>();
             Capabilities = new List<string>();
             ResponsePatterns = new Dictionary<string, string>();
             Settings = new Dictionary<string, object>();

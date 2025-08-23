@@ -40,7 +40,7 @@ namespace UniBuddhi.Test
                     "You are a test agent.",
                     0.7f
                 );
-                personality.Traits = new List<string> { "Test", "Compilation" };
+                personality.Traits = new Dictionary<string, float> { { "Test", 0.5f }, { "Compilation", 0.8f } };
                 personality.Creativity = 0.6f;
                 personality.Formality = 0.4f;
                 

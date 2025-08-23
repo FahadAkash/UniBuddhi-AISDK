@@ -419,7 +419,13 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/6000.0.37f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+"Assets/Scripts/AISDK/Editor/AgentCreationWizard.cs"
 "Assets/Scripts/AISDK/Editor/AISDKGuideWindow.cs"
+"Assets/Scripts/AISDK/Editor/AISDKManagerWindow.cs"
+"Assets/Scripts/AISDK/Editor/APIConfigurationWindow.cs"
+"Assets/Scripts/AISDK/Editor/EditorWindowTest.cs"
+"Assets/Scripts/AISDK/Editor/ExtensionGeneratorWindow.cs"
+"Assets/Scripts/AISDK/Editor/ProviderStatusWindow.cs"
 -langversion:9.0
 /deterministic
 /optimize+

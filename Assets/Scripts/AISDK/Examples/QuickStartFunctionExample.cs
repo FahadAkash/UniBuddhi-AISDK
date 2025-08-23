@@ -63,7 +63,12 @@ namespace UniBuddhi.Examples
                 "use your calculator functions to solve problems step-by-step. " +
                 "Always explain your reasoning and show your work. " +
                 "If you need to look up mathematical concepts, use your knowledge search functions.",
-                new System.Collections.Generic.List<string> { "patient", "educational", "step-by-step", "encouraging" },
+                new System.Collections.Generic.Dictionary<string, float> { 
+                    { "patient", 0.9f }, 
+                    { "educational", 0.8f }, 
+                    { "step-by-step", 0.9f }, 
+                    { "encouraging", 0.7f } 
+                },
                 new System.Collections.Generic.List<string> { "calculations", "mathematical_explanations", "problem_solving" }
             );
             

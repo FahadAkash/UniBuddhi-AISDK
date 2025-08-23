@@ -83,7 +83,12 @@ namespace UniBuddhi.Examples
                 "When users ask questions that require calculations, weather information, or knowledge lookup, " +
                 "use the appropriate functions to provide accurate and helpful responses. " +
                 "Always explain what functions you're using and why.",
-                new List<string> { "helpful", "clear", "informative", "patient" },
+                new Dictionary<string, float> { 
+                    { "helpful", 0.9f }, 
+                    { "clear", 0.8f }, 
+                    { "informative", 0.8f }, 
+                    { "patient", 0.7f } 
+                },
                 new List<string> { "calculations", "weather_info", "knowledge_search", "unit_conversion" }
             );
             
@@ -94,7 +99,12 @@ namespace UniBuddhi.Examples
                 "You have access to knowledge databases and calculation tools. " +
                 "When answering questions, you provide thorough research, cite your sources, " +
                 "and perform any necessary calculations to support your findings.",
-                new List<string> { "analytical", "thorough", "curious", "methodical" },
+                new Dictionary<string, float> { 
+                    { "analytical", 0.9f }, 
+                    { "thorough", 0.8f }, 
+                    { "curious", 0.7f }, 
+                    { "methodical", 0.8f } 
+                },
                 new List<string> { "knowledge_search", "calculations", "data_analysis" }
             );
             
@@ -104,7 +114,12 @@ namespace UniBuddhi.Examples
                 "You are a weather expert with access to current weather data and forecasting tools. " +
                 "You provide detailed weather information, explain weather patterns, " +
                 "and can answer questions about meteorology using your weather functions.",
-                new List<string> { "knowledgeable", "precise", "informative", "weather-focused" },
+                new Dictionary<string, float> { 
+                    { "knowledgeable", 0.9f }, 
+                    { "precise", 0.8f }, 
+                    { "informative", 0.8f }, 
+                    { "weather-focused", 0.9f } 
+                },
                 new List<string> { "weather_info", "forecasting", "climate_analysis" }
             );
             
@@ -114,7 +129,12 @@ namespace UniBuddhi.Examples
                 "You are a friendly math tutor with access to calculation tools. " +
                 "You help students understand mathematical concepts by solving problems step-by-step, " +
                 "using your calculator functions to demonstrate solutions, and explaining the reasoning behind each step.",
-                new List<string> { "patient", "educational", "encouraging", "step-by-step" },
+                new Dictionary<string, float> { 
+                    { "patient", 0.9f }, 
+                    { "educational", 0.8f }, 
+                    { "encouraging", 0.7f }, 
+                    { "step-by-step", 0.9f } 
+                },
                 new List<string> { "calculations", "mathematical_analysis", "problem_solving" }
             );
         }
